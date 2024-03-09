@@ -33,14 +33,92 @@
             @endif
 
         </div>
-        <div class="py-12">
+        <div class="py-12 bg-gray-100">
             <div class="container">
-                <div>
-                    <div class="">
-
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="rounded-4 card border border-0" style="height: 100%">
+                            <img src="{{ asset('img/arvore_paisagem.jpg') }}" class="card-img-top rounded-top-4" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
-                    <p>nada </p>
-                    <p>nada tbm</p>
+                    <div class="col-12 col-lg-4 d-flex align-content-between flex-wrap ">
+                        <div class="rounded-4 card border border-0 mt-4 mt-lg-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="{{ asset('img/arvore_paisagem.jpg') }}" class="img-fluid rounded-start-4 " alt="..." style="height:100%;object-fit: cover;">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <br>
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="rounded-4 card border border-0 mt-4 mt-lg-2">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="{{ asset('img/arvore_paisagem.jpg') }}" class="img-fluid rounded-start-4 " alt="..." style="height:100%;object-fit: cover;">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <br>
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="rounded-4 card border border-0 mt-4 mt-lg-2">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="{{ asset('img/arvore_paisagem.jpg') }}" class="img-fluid rounded-start-4 " alt="..." style="height:100%;object-fit: cover;">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <br>
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="rounded-4 card border border-0 mt-4 mt-lg-2">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="{{ asset('img/arvore_paisagem.jpg') }}" class="img-fluid rounded-start-4 " alt="..." style="height:100%;object-fit: cover;">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <br>
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex overflow-x-hidden">
+                    <div class="rounded-4 card border border-0 mt-4 mt-lg-0">
+                        <div class="card-body">
+                            <br>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card</p>
+                            <br>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
