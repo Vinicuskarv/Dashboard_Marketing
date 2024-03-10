@@ -1,0 +1,14 @@
+.card-worker:hover .rounded-4{
+    border: 1px solid rgb(0, 213, 255) !important;
+}
+.card-worker:active .rounded-4,.card-worker:active .rounded-circle{
+    border: 1px solid rgb(123, 255, 0) !important;
+}
+.card-worker .rounded-circle{
+    padding: 5px;
+    border: 1px solid rgb(0, 213, 255) !important;
+}
+.nav-page-user{
+    background-color: rgb(0, 213, 255);
+    color: aliceblue;
+}
