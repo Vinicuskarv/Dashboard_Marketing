@@ -1,5 +1,5 @@
 <?php
-
+use App\Models\Profissional;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/profissionais', 'App\Http\Controllers\ProfissionalController@index');
 
 Route::middleware([
     'auth:sanctum',
