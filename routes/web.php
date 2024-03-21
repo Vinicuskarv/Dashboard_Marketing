@@ -1,7 +1,7 @@
 <?php
-use App\Models\Profissional;
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfissionalController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ProfissionalController::class, 'index'])->name('/');
 
-Route::get('/profissionais', 'App\Http\Controllers\ProfissionalController@index');
+
 
 Route::middleware([
     'auth:sanctum',

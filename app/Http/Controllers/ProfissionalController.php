@@ -1,14 +1,14 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Models\Profissional;
+use App\Models\Profissionais;
 use Illuminate\Http\Request;
 
 class ProfissionalController extends Controller
 {
     public function index()
     {
-        $profissionais = Profissional::all();
-        return view('profissionais', ['profissionais' => $profissionais]);
+        $profissionais = Profissionais::all();
+        return view('welcome', compact('profissionais'));
     }
 }
