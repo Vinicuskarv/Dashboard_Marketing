@@ -17,9 +17,9 @@ class CreateProfissionaisTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('categoria');
-            $table->unsignedBigInteger('permissao_id');
+
             // Definindo a chave estrangeira
-            $table->foreign('permissao_id')->references('id')->on('permissoes');
+
             $table->timestamps();
         });
     }

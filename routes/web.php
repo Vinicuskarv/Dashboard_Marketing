@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfissionalController;
+use App\Http\Controllers\MasterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +14,7 @@ use App\Http\Controllers\ProfissionalController;
 |
 */
 
-Route::get('/', [ProfissionalController::class, 'index'])->name('/');
-
+Route::get('/', [MasterController::class, 'index'])->name('/');
 
 
 Route::middleware([

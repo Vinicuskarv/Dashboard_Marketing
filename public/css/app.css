@@ -15,3 +15,32 @@
     background-color: rgb(0, 213, 255);
     color: aliceblue;
 }
+.cardTheme{
+    background-color: transparent;
+    color: aliceblue;
+    border: 0.5px solid rgba(255, 255, 255, 0.132);
+    margin: 5px;
+    width: 100%;
+}
+
+.borda-verde{
+    border: 1px solid rgb(123, 255, 0) !important;
+    background-color: rgba(0, 255, 98, 0.381) !important;
+}
+.handle-click:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+  }
+.buttom-next-off{
+    display: none;
+    color: aliceblue;
+}
+.buttom-next-off p{
+   margin: 0;
+   font-weight:900;
+   font-size: 20px;
+}
+.buttom-next-on{
+    display: flex;
+    color: aliceblue;
+}

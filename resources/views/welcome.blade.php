@@ -33,32 +33,11 @@
 
     </head>
     <body class="bg-theme bg-theme1">
-        <div class="topbar-nav">
-            @if (Route::has('login'))
-                <div class="navbar navbar-expand fixed-top">
-                    <ul class="navbar-nav align-items-center right-nav-link">
-                        @auth
-                            <li class="nav-item dropdown-lg">
-                                <a href="{{ url('/dashboard') }}" class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect">Dashboard</a>
-                            </li>
-                        @else
-                            <li class="nav-item dropdown-lg">
-                                <a href="{{ route('login') }}" class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect">Log in</a>
-                            </li>
-                                @if (Route::has('register'))
-                                <li class="nav-item dropdown-lg">
-                                    <a href="{{ route('register') }}" class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect">Register</a>
-                                </li>
-                                @endif
 
-                        @endauth
-                    </ul>
-                </div>
-            @endif
-        </div>
         <div class="py-12 bg-gray-100">
             <div class="container" style="padding-top:60px;">
-                <div class="row d-none d-sm-flex my-4">
+
+             {{--    <div class="row d-none d-sm-flex my-4">
                     <div class="col-12 col-lg-8">
                         <div class="rounded-4 card border border-0" style="height: 100%">
                             <img src="{{ asset('img/arvore_paisagem.jpg') }}" class="card-img-top rounded-top-4" alt="...">
@@ -131,17 +110,22 @@
                             </div>
                           </div>
                     </div>
-                </div>
+                </div> --}}
 
                 @livewire('card-user-profissional')
             </div>
         </div>
     </body>
+    <script>
+        Livewire.on('reloadPage', function() {
+            window.location.reload();
+        });
+    </script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-
+    <script src="https://kit.fontawesome.com/db74d9e1d4.js" crossorigin="anonymous"></script>
    <!-- simplebar js -->
     <script src="assets/plugins/simplebar/js/simplebar.js"></script>
     <!-- sidebar-menu js -->
